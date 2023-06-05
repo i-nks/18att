@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    //PROBLEMA
+    Faça um script que leia três números e mostre-os em ordem decrescente.
+    */
+
+    //ENTRADA
+    const num1 = Number(prompt(`Informe um número.`).trim().replace(",","."));
+    const num2 = Number(prompt(`Informe um número, diferente do anterior.`).trim().replace(",","."));
+    const num3 = Number(prompt(`Informe um número diferente dos anteriores.`).trim().replace(",","."));
+
+    //PROCESSAMENTO
+    if (num1 > num2 && num2 > num3) {
+        document.write(`${num1}; ${num2}; ${num3}.`)
+    }
+    else if (num1 > num3 && num3 > num2) {
+        document.write(`${num1}; ${num3}; ${num2}.`)
+    }
+    else if (num2 > num1 && num1 > num3) {
+        document.write(`${num2}; ${num1}; ${num3}`)
+    }
+    else if (num2 > num3 && num3 > num1) {
+        document.write(`${num2}; ${num3}; ${num1}`)
+    }
+    else if (num3 > num2 && num2 > num1) {
+        document.write(`${num3}; ${num2}; ${num1}`)
+    }
+    else if (num3 > num1 && num1 > num2) {
+        document.write(`${num3}; ${num1}; ${num2}`)
+    }
+    else {
+        alert(`Opção inválida.`)
+    }
+
+    //SAÍDA 
+
+</script>
